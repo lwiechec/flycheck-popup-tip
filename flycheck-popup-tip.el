@@ -100,7 +100,7 @@
     (setq flycheck-popup-tip-object
           (popup-tip
            (flycheck-popup-tip-format-errors errors)
-           :nostrip t
+           ;;:nostrip t
            :nowait t))
     (add-hook 'pre-command-hook 'flycheck-popup-tip-delete-popup nil t)))
 
